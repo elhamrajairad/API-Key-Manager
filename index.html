@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/api.css">
+    <title>API key Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex justfiy-content-space-between ">
+            <div class="api__form">
+                <form class="form__api-fields flex flex-column justify-content-space-around">
+                    <label for="user-name">
+                        User Name </label>
+                    <input type="text" name="user-name" id="user-name">
+                    <label for="api-key">
+                        Api Key </label>
+                    <input type="text" name="api-key" id="api-key">
+                    <label for="api-key">
+                        Api Secret </label>
+                    <input type="text" name="api-key" id="api-secret">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="api__show">
+                <h1>API Key Maneger</h1>
+                <div class="api__show--plaseholder">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>User Name</td>
+                                <td>Api Key</td>
+                                <td>Api Secret</td>
+                                <td>.....</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
