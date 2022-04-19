@@ -13,7 +13,7 @@
   width: 40rem;
   background-color: #ebebeb;
   border-radius: var(--border-raduis-md);
-  padding: 1rem;
+  padding: 1.3rem 1rem;
   outline: 0;
   border: 0;
   font-weight: 500;
@@ -46,8 +46,8 @@ input {
   width: 100%;
   border-radius: var(--border-raduis-md);
 }
-.form__api-fields{
-    margin-top: 4rem;
+.form__api-fields {
+  margin-top: 4rem;
 }
 .api__show--plaseholder table {
   width: 100%;
@@ -59,8 +59,23 @@ input {
   background-color: #bec3c7;
   border-radius: inherit;
   font-weight: 500;
-color: var(--dark-color);
+  color: var(--dark-color);
 }
 .api__show--plaseholder table td {
   padding: 1.5rem;
+}
+.btn {
+  padding: 0.7rem;
+  border-radius: var(--border-raduis-sm);
+  font-family: inherit;
+  margin: 0.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+  display: inline-block;
+}
+.btnEdite {
+  background-color: green;
+}
+.btnDelete {
+  background-color: red;
 }
