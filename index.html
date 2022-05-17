@@ -5,49 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/api.css">
-    <title>API key Manager</title>
-</head>
+    <!-- Remix icon - start -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Remix icon - end -->
+    <!-- files Css - start -->
+    <link rel="stylesheet" href="./layout/main.css">
+    <!-- files Css - end -->
+    <title>Api Key Manager</title>
 
-<body>
+</head>
+<main id="background">
     <div class="container">
-        <div class="flex justfiy-content-space-between ">
-            <div class="api__form">
-                <form class="form__api-fields flex flex-column justify-content-space-around" autocomplete="off">
-                    <label for="user-name">
-                        User Name </label>
-                    <input type="text" name="user-name" id="user-name">
-                    <label for="api-key">
-                        Api Key </label>
-                    <input type="text" name="api-key" id="api-key">
-                    <label for="api-key">
-                        Api Secret </label>
-                    <input type="text" name="api-key" id="api-secret">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="api__show">
-                <h1>API Key Maneger</h1>
-                <div class="api__show--plaseholder">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>#</td>
-                                <td>User Name</td>
-                                <td>Api Key</td>
-                                <td>Api Secret</td>
-                                <td>.....</td>
-                            </tr>
-                        </thead>
-                        <tbody id="tbody">
-                        </tbody>
-                    </table>
+        <div class="api ">
+            <h1>API Key Manager</h1>
+            <div class="api__container flex flex-direction-column justify-content-space-between">
+                <div class="api__container__form width-100">
+                    <form id="get-api" class="flex flex-direction-row widht-100 gap-2">
+                        <input type="text" name="api-name" placeholder="API Name..." id="api-name">
+                        <input type="text" name="api-key" placeholder="API Key..." id="api-key">
+                        <input type="text" name="api-password" placeholder="API Secret..." id="api-password">
+                        <button type="submit">
+                            Submit
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </form>
                 </div>
+                
+                <table class="api__container__table">
+                    <thead>
+                        <tr>
+                            <th>API Name</th>
+                            <th>API Key</th>
+                            <th>API Secret</th>
+                            <th>Delete / Edite</th>
+                        </tr>
+                    </thead>
+                    <tbody id="api__container__table__list">
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-    <script src="./script/script.js"></script>
+</main>
+<script src="./script/script.js"></script>
+
+<body>
+
 </body>
 
 </html>

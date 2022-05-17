@@ -1,0 +1,116 @@
+@import "./reset.css";
+@import "./utility.css";
+@import "./colors.css";
+
+#background {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10rem;
+}
+.api {
+  background-color: #f9f9f994;
+  height: 75rem;
+  border-radius: var(--border-radius-xs);
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+#get-api input {
+  padding: 1.3rem;
+  background-color: var(--white);
+  font-size: 1.3rem;
+  border-radius: var(--border-radius-xs);
+  font-weight: 600;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+#get-api button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+  transition: var(--transition);
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-xs);
+}
+#get-api button:hover {
+  background-color: #7f92f1;
+}
+.ri-arrow-right-line {
+  transition: var(--transition);
+}
+#get-api button:hover .ri-arrow-right-line {
+  margin-left: 1rem;
+}
+#get-api input::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+.api h1 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.api__container__table {
+  width: 100%;
+  text-align: center;
+  margin: 3rem auto;
+  color: var(--primary-color);
+}
+.api__container__table th {
+  border-bottom: 2px solid var(--primary-color);
+}
+#api__container__table__list td {
+  border-bottom: 1px solid #c91dc9;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+.alert {
+  position: absolute;
+}
+.error {
+  color: red;
+  top: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  right: 0%;
+  left: 0%;
+  background-color: rgba(251, 8, 8, 0.406);
+  width: 100%;
+  text-align: center;
+}
+.success {
+  color: green;
+  top: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  right: 0%;
+  left: 0%;
+  background-color: rgba(108, 180, 121, 0.406);
+  width: 100%;
+  text-align: center;
+}
+.link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.1rem;
+  color: var(--white);
+  border-radius: var(--border-radius-xs);
+  width: 10rem;
+}
+.remove {
+  background-color: red;
+}
+.edite{
+    background-color: green;
+}
