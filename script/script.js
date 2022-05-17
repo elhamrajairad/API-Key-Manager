@@ -18,7 +18,7 @@ form.addEventListener("submit", function (e) {
   } else {
     let api = new ApiGet(name, key, password);
     ui.showListApi(api);
-    ui.alertShow("data by success insert...", "success");
+    ui.alertShow("Data Added...", "success");
   }
   ui.clearValue();
 });
