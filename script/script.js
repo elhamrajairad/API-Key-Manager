@@ -30,9 +30,26 @@ UI.prototype.showListApi = function (api) {
     <td>${api.name}</td>
    <td> ${api.key}</td>
     <td>${api.password}</td>
-    <td><a href='#' class='link remove'>Delete</a><a href='#' class='link edite'>edite</a></td>
+    <td><a href='#' class='remove'>Delete</a><a href='#' class='edite'>Edite</a></td>
     `;
   list.appendChild(row);
+};
+
+document
+  .querySelector(".api__container__table")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    // removeItem(e.target);
+    let ui = new UI();
+    ui.alertShow("Data Delete!", "error");
+    ui.removeItem(e.target);
+  });
+
+UI.prototype.removeItem = function (li) {
+  if (li.className === "remove") {
+    li.parentElement.parentElement.remove();
+    console.log(li.parentElement.parentElement);
+  }
 };
 
 UI.prototype.alertShow = function (message, classes) {
@@ -46,6 +63,7 @@ UI.prototype.alertShow = function (message, classes) {
     textAlrt.remove();
   }, 2000);
 };
+
 UI.prototype.clearValue = function () {
   document.querySelector("#api-name").value = "";
   document.querySelector("#api-key").value = "";
